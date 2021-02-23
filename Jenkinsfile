@@ -7,6 +7,10 @@ pipeline {
       steps { sh 'npm install' }
     }
 
+    stage('default') {
+      steps { sh 'npm install' }
+    }
+
     // stage('Test') {
     //  parallel {
     //    stage('Static code analysis') {
